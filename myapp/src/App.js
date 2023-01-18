@@ -1,4 +1,5 @@
 import "./App.css";
+import Calculator from "./components/calculator";
 import GrowYourBusiness from "./components/general";
 import HeaderLogo, { NavBar } from "./components/header";
 import Prototypes from "./components/prototypes";
@@ -6,10 +7,11 @@ import Prototypes from "./components/prototypes";
 function App() {
   return (
     <>
-      <HeaderLogo />
+      {/* <HeaderLogo />
       <NavBar />
       <GrowYourBusiness />
-      <Prototypes />
+      <Prototypes /> */}
+      <Calculator />
     </>
   );
 }
