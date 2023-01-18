@@ -1,6 +1,9 @@
 .App {
   text-align: center;
 }
+a {
+  text-decoration: none;
+}
 
 .App-header {
   min-height: 100vh;
@@ -108,4 +111,107 @@
   border: 3px solid #00d2b5;
   color: black;
   transition: 500ms ease;
+}
+
+.features {
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 5%;
+  gap: 5%;
+  width: 100vw;
+  height: 100vh;
+  background-color: #61dafb;
+}
+.featureCards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 25%;
+  height: 50%;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 3%;
+  gap: 5%;
+}
+
+.featureCards > a {
+  color: #00d2b5;
+}
+
+.featureCards > div {
+  width: 100%;
+}
+
+.logo {
+  background-color: #00d2b5;
+  width: 20%;
+  height: 20%;
+}
+
+.featureSubtitle {
+  font-size: 40px;
+  font-weight: 900;
+}
+.icon-autorenew:before {
+  content: "\2607";
+}
+
+.proto {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 5%;
+}
+
+.prototypesImage {
+  height: 100%;
+  width: 60%;
+}
+
+.prototypeDescriptionSpan {
+  line-height: 1.7;
+  color: gray;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.ul-check.success li:before {
+  color: #8bc34a;
+}
+
+.ul-check li:before {
+  left: 0;
+  font-size: 20px;
+  top: -0.3rem;
+  font-family: "icomoon";
+  content: "\e5ca";
+  position: absolute;
+}
+
+li {
+  list-style-type: "\2699";
+}
+
+.comment {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 30%;
+  background-color: white;
+  border: 2px solid black;
+  box-shadow: #000;
+  margin-left: 10%;
+  text-align: center;
+  box-shadow: 0 0 3px 3px black;
+  justify-content: center;
+  align-items: center;
 }

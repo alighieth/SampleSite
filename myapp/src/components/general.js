@@ -1,3 +1,4 @@
+import Fade from "react-reveal/Fade";
 const GrowYourBusiness = () => {
   return (
     <div className="advert">
@@ -24,7 +25,11 @@ const TextDiv = () => {
 };
 
 const GeneralImage = () => {
-  return <img src="work.png" />;
+  return (
+    <Fade right>
+      <img src="work.png" />
+    </Fade>
+  );
 };
 
 export default GrowYourBusiness;

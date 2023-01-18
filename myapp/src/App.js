@@ -1,6 +1,7 @@
 import "./App.css";
 import GrowYourBusiness from "./components/general";
 import HeaderLogo, { NavBar } from "./components/header";
+import Prototypes from "./components/prototypes";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <HeaderLogo />
       <NavBar />
       <GrowYourBusiness />
+      <Prototypes />
     </>
   );
 }
