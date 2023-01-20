@@ -318,7 +318,7 @@ li {
   font-family: "montserrat-medium", sans-serif;
   text-align: center;
   word-wrap: break-word;
-  font-size: 5rem;
+  font-size: 4rem;
   line-height: 1.25;
   color: white;
   margin-top: 0;
@@ -445,6 +445,56 @@ button,
   line-height: 1.3;
 }
 
+.contact-container {
+  box-sizing: border-box;
+  padding: 5%;
+  width: 100vw;
+  background-image: url("https://preview.colorlib.com/theme/glint/images/contact-bg.jpg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.contactForm {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-sizing: border-box;
+  padding: 5%;
+}
+.form {
+  width: 60%;
+  background: rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  padding-top: 2.5%;
+  padding-left: 5%;
+}
+
+.contact {
+  text-align: center;
+  width: 60%;
+  text-transform: uppercase;
+}
+
+.contactinfo {
+  width: 40%;
+  background-color: #121212;
+  box-sizing: border-box;
+  padding-top: 2.5%;
+  padding-left: 5%;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  height: 4rem;
+  background: transparent;
+  border: none;
+}
 .feature-box-img {
   display: flex;
   flex-direction: row;
@@ -509,5 +559,18 @@ button,
 
   .feature-box-img > img {
     width: 50%;
+  }
+
+  .contactForm {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .form,
+  .contactinfo,
+  .contact {
+    width: 100%;
+    margin-bottom: 5rem;
   }
 }
