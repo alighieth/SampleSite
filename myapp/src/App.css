@@ -1,31 +1,24 @@
+#my-main-wrapper section,
+p,
+div,
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  background-image: url("plant.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+}
+
 .App {
   text-align: center;
 }
 a {
   text-decoration: none;
-}
-
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 .header {
@@ -38,10 +31,67 @@ a {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  overflow: hidden;
 }
 
-.header > span {
-  color: #00d2b5;
+.header-glint {
+  color: white;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "lora-regular", serif;
+  font-size: 1.7rem;
+  font-style: normal;
+  font-weight: normal;
+  box-sizing: border-box;
+  padding: 5%;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 2.5vh;
+}
+
+.advert {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100vw;
+  height: max-content;
+}
+
+.advert-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  width: 40%;
+  overflow: hidden;
+}
+
+.advert-info > p {
+  font-family: "montserrat-medium", sans-serif;
+  font-size: 4rem;
+  margin-top: 0;
+  color: #ffffff;
+}
+
+.advert-info > span {
+  font-family: "montserrat-medium", sans-serif;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+  margin-left: 6px;
+}
+
+.header > h1 > span {
+  color: lightgreen;
+}
+
+.header-glint-menu {
+  color: lightgreen;
 }
 
 .navbar {
@@ -63,13 +113,6 @@ a {
   text-decoration: none;
   color: #00d2b5;
   transition: 500ms ease;
-}
-
-.advert {
-  display: flex;
-  flex-direction: row;
-  width: 100vw;
-  height: 80vh;
 }
 
 .textDiv {
@@ -247,4 +290,224 @@ li {
   height: 20%;
   background-color: green;
   text-align: center;
+}
+
+.about {
+  width: 60vw;
+  background-color: #39b54a;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 5%;
+}
+
+.about-subhead {
+  font-family: "montserrat-bold", sans-serif;
+  font-size: 1rem;
+  line-height: 1.333;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #000;
+}
+
+.about-header {
+  font-family: "montserrat-medium", sans-serif;
+  text-align: center;
+  word-wrap: break-word;
+  font-size: 5rem;
+  line-height: 1.25;
+  color: white;
+  margin-top: 0;
+}
+
+.about-line {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  width: 40%;
+}
+
+.about > p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 1.5rem;
+  line-height: 1.75;
+  text-align: center;
+  max-width: 1024px;
+  color: #000;
+}
+
+.home-content__buttons {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  gap: 5%;
+  margin-bottom: 10rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.home-content__buttons > a {
+  text-decoration: none;
+  color: white;
+  width: 50%;
+  letter-spacing: 0.25rem;
+  text-align: center;
+  background: transparent;
+  border: 0.2rem solid white;
+  text-transform: uppercase;
+  height: 4rem;
+  font-family: "montserrat-medium", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-content__buttons > a:hover {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background-color: white;
+  color: #000;
+}
+
+.home-content__buttons > a:active {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background-color: white;
+  color: #000;
+}
+
+.btn--stroke,
+button.btn--stroke {
+  background: transparent !important;
+  border: 0.2rem solid #39b54a;
+  color: #39b54a;
+}
+
+.a:hover {
+  background-color: white;
+}
+
+button,
+.btn {
+  margin-bottom: 10rem;
+}
+
+.extras {
+  background-color: white;
+  color: #39b54a;
+}
+
+.extrasblack {
+  color: #000;
+  font-size: 4rem;
+}
+
+.featuresContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 5%;
+  gap: 5rem;
+}
+
+.featuresContainer > div {
+  width: 40%;
+}
+.feature-image {
+  fill: #39b54a;
+}
+.feature-title {
+  color: #000;
+  font-size: 2rem;
+}
+
+.feature-p {
+  color: #757575;
+  font-size: 1.2rem;
+  line-height: 1.3;
+}
+
+.feature-box-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5%;
+  box-sizing: border-box;
+  padding: 2%;
+}
+
+@media only screen and (max-width: 600px) {
+  .header-glint {
+    justify-content: center;
+  }
+  .advert {
+    margin-top: 5rem;
+    box-sizing: border-box;
+    padding: 1rem;
+    justify-content: center;
+  }
+
+  .advert-info {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .advert-info > span {
+    font-size: 1rem;
+  }
+
+  .advert-info > p {
+    font-size: 3rem;
+  }
+
+  .about-subhead {
+    font-size: 0.5rem;
+  }
+
+  .about-header {
+    font-size: 3rem;
+  }
+
+  .home-content__buttons {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .featuresContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .feature-box-img {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .feature-box-img > img {
+    width: 50%;
+  }
 }

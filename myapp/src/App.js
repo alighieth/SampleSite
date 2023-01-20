@@ -1,18 +1,29 @@
 import "./App.css";
-import Calculator from "./components/calculator";
-import GrowYourBusiness from "./components/general";
-import HeaderLogo, { NavBar } from "./components/header";
-import Prototypes from "./components/prototypes";
+import About, { Extras } from "./glint/features";
+import General from "./glint/general";
+import Header from "./glint/header";
+import Calculator from "./landerz/calculator";
+import GrowYourBusiness from "./landerz/general";
+import HeaderLogo, { NavBar } from "./landerz/header";
+import Prototypes from "./landerz/prototypes";
 
 function App() {
   return (
     <>
-      {/* <HeaderLogo />
-      <NavBar />
-      <GrowYourBusiness />
-      <Prototypes /> */}
-      <Calculator />
+      <Header />
+
+      <General />
+      <About />
+      <Extras />
     </>
+    // landerz
+    // <>
+    //   {/* <HeaderLogo />
+    //   <NavBar />
+    //   <GrowYourBusiness />
+    //   <Prototypes /> */}
+    //   {/* <Calculator /> */}
+    // </>
   );
 }
 
