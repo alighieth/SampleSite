@@ -561,9 +561,9 @@ textarea:focus {
 
   #main-div {
     min-height: max-content;
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2PKOinqs-MN05c0AMpI2ku_sg-5w5rjmNtg&usqp=CAU");
+    background-image: url("https://wallpaperaccess.com/full/3483001.jpg");
     background-repeat: no-repeat;
-    background-size: 100vh;
+    background-size: cover;
     background-attachment: fixed;
     color: white;
   }
