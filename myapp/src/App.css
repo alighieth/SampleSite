@@ -459,7 +459,9 @@ button,
   justify-content: flex-start;
   align-items: center;
 }
+
 .contactForm {
+  margin-top: 3rem;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -549,6 +551,10 @@ textarea:focus {
   border-bottom: 2px solid #39b54a;
   transition: 500ms ease-in;
   color: white;
+}
+
+.socialMediaIcons {
+  margin-right: 1rem;
 }
 
 @media only screen and (max-width: 600px) {

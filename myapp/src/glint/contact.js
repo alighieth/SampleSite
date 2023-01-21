@@ -69,6 +69,7 @@ const ContactForm = () => {
             </>
           }
         />
+        <SocialMedia />
       </div>
     </div>
   );
@@ -99,6 +100,29 @@ const ContactInfo = ({ title, description }) => {
   );
 };
 
+const SocialMedia = () => {
+  return (
+    <div
+      style={{
+        marginTop: "3rem",
+      }}
+    >
+      <a href="https://github.com/alighieth" className="socialMediaIcons">
+        <img width="10%" src="github.svg" alt="github" />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/ali-ghieth"
+        className="socialMediaIcons"
+      >
+        <img width="10%" src="linkedin.svg" alt="linkedin" />
+      </a>
+      <a href="https://github.com/alighieth" className="socialMediaIcons">
+        <img width="10%" src="instagram.svg" alt="instagram" />
+      </a>
+    </div>
+  );
+};
+
 const ContactFormForm = () => {
   useEffect(() => {
     let right = document.getElementById("contactinformation").style.height;
@@ -123,7 +147,17 @@ const ContactFormForm = () => {
         placeholder="Your Message"
       />
 
-      <button className="btn">submit</button>
+      <div
+        style={{
+          marginTop: "1rem",
+          display: "flex",
+          width: "100%",
+          flexDirection: "row",
+          justifyContent: "center",
+        }}
+      >
+        <button className="btn">submit</button>
+      </div>
     </form>
   );
 };
