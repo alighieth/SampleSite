@@ -152,6 +152,7 @@ const ContactFormForm = () => {
       .send("service_28z21xf", "template_mnnw3ag", data, "zcm001YeOLTHzPhMu")
       .then(() => {
         console.log("email sent success");
+        window.scrollTo(0, 0);
       });
   };
   return (
