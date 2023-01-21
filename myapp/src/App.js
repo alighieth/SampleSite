@@ -11,12 +11,14 @@ import Prototypes from "./landerz/prototypes";
 function App() {
   return (
     <>
-      <Header />
+      <div id="main-div">
+        <Header />
 
-      <General />
-      <About />
-      <Extras />
-      <Contact />
+        <General />
+        <About />
+        <Extras />
+        <Contact />
+      </div>
     </>
     // landerz
     // <>

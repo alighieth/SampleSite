@@ -555,6 +555,19 @@ textarea:focus {
 }
 
 @media only screen and (max-width: 600px) {
+
+  main-div {
+    background-image: url("plant.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-attachment: fixed;
+    color: white;
+  }
+
+  .img { 
+    max-width: 100%;
+  }
+  
   .header-glint {
     justify-content: center;
   }
