@@ -13,11 +13,11 @@ function App() {
     <>
       <div id="main-div">
         <Header />
-        <General />
-        <About />
-        <Extras />
-        <Contact />
       </div>
+      <General />
+      <About />
+      <Extras />
+      <Contact />
     </>
     // landerz
     // <>
