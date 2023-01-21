@@ -18,22 +18,22 @@ const ContactForm = () => {
   return (
     <div className="contactForm">
       <div className="form" id="mycontactform">
-        <h3
-          className="contactform-subheading contactinfo-subheadingh3"
+        <h5
+          className="contactform-subheading contactinfo-subheadingh5"
           style={{ color: "white" }}
         >
           Send Us a message
-        </h3>
+        </h5>
 
         <ContactFormForm />
       </div>
       <div className="contactinfo" id="contactinformation">
-        <h3
+        <h5
           className="contactform-subheading contactinfo-subheadingh3"
           style={{ color: "white" }}
         >
           Contact Info
-        </h3>
+        </h5>
         <ContactInfo
           title="Where to Find Us"
           description={
@@ -77,7 +77,7 @@ const ContactForm = () => {
 const ContactInfo = ({ title, description }) => {
   return (
     <div>
-      <h3 className="contactinfo-subheadingh3">{title}</h3>
+      <h5 className="contactinfo-subheadingh5">{title}</h5>
       <div
         style={{
           display: "flex",
@@ -85,7 +85,7 @@ const ContactInfo = ({ title, description }) => {
           justifyContent: "flex-start",
           fontfamily: "montserrat-light",
           color: "rgba(255, 255, 255, 0.4)",
-          fontsize: "1.5rem",
+          fontSize: "0.75rem",
           lineHeight: "2",
           marginblockstart: "1em",
           marginblockend: "1em",
@@ -112,28 +112,18 @@ const ContactFormForm = () => {
         width: "100%",
       }}
     >
-      <div className="form-field">
-        <input type="text" name="" required="" placeholder="Your Name" />
-      </div>
-      <div className="form-field">
-        <input type="text" name="" required="" placeholder="Your Email" />
-      </div>
-      <div className="form-field">
-        <input type="text" name="" required="" placeholder="Subject" />
-      </div>
+      <input type="text" name="" required="" placeholder="Your Name" />
+      <input type="text" name="" required="" placeholder="Your Email" />
+      <input type="text" name="" required="" placeholder="Subject" />
+      <textarea
+        name=""
+        required=""
+        cols="30"
+        rows="10"
+        placeholder="Your Message"
+      />
 
-      <div className="form-field">
-        <textarea
-          type="textarea"
-          name=""
-          required=""
-          placeholder="Your Message"
-        />
-      </div>
-
-      <a href="#" className="formSubmit">
-        Submit
-      </a>
+      <button className="btn">submit</button>
     </form>
   );
 };
