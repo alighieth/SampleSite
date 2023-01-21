@@ -92,17 +92,10 @@ const FeaturesBox = ({ image, title, description }) => {
   return (
     <div>
       <div className="feature-box-img">
-        <img width="10%" src={image} alt="brush" className="feature-image" />
+        <img width="2%" src={image} alt="brush" className="feature-image" />
         <h5 className="feature-title">{title}</h5>
       </div>
-      <p
-        className="feature-p"
-        style={{
-          justifySelf: "center",
-        }}
-      >
-        {description}{" "}
-      </p>
+      <p className="feature-p">{description} </p>
     </div>
     // </div>
   );

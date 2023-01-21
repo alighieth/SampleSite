@@ -134,6 +134,8 @@ const ContactFormForm = () => {
     <form
       style={{
         width: "100%",
+        display: "flex",
+        flexDirection: "column",
       }}
     >
       <input type="text" name="" required="" placeholder="Your Name" />
