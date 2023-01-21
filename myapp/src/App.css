@@ -563,7 +563,7 @@ textarea:focus {
     min-height: max-content;
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2PKOinqs-MN05c0AMpI2ku_sg-5w5rjmNtg&usqp=CAU");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100vh;
     background-attachment: fixed;
     color: white;
   }
