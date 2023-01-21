@@ -560,9 +560,10 @@ textarea:focus {
 @media only screen and (max-width: 600px) {
 
   #main-div {
+    min-height: max-content;
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2PKOinqs-MN05c0AMpI2ku_sg-5w5rjmNtg&usqp=CAU");
     background-repeat: no-repeat;
-    background-size: 100vw;
+    background-size: cover;
     background-attachment: fixed;
     color: white;
   }
@@ -591,7 +592,7 @@ textarea:focus {
   }
 
   .advert-info > p {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .about-subhead {
@@ -599,7 +600,18 @@ textarea:focus {
   }
 
   .about-header {
-    font-size: 3rem;
+    font-size: 2rem;
+  }
+
+  .about {
+    width: 100%;
+    
+  }
+
+  .about > p {
+    text-align: left;
+    font-size: 1rem;
+    
   }
 
   .home-content__buttons {

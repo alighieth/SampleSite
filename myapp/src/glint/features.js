@@ -13,17 +13,51 @@ const About = () => {
       <div className="about" id="about">
         <Fade left>
           <div className="about-subhead">HELLO THERE</div>
-          <div className="about-header">We Are AliGhieth's</div>
+          <div className="about-header">I am AliGhieth</div>
           <hr className="about-line" />
           <p>
-            It is important to take care of the pain itself, and it will be
-            followed by the growth of the patient, but at the same time it will
-            happen that there is a lot of work and pain. For to come to the
-            smallest detail, no one should practice any kind of work unless he
-            derives some benefit from it. Do not be angry with the pain in the
-            reprimand in the pleasure he wants to be a hair from the pain in the
-            hope that there is no breeding. Unless they are blinded by lust,
-            they do not come forth; they are in fault who abandon their duties.
+            I'm a software engineer, with more than 2 years of experience
+            crafting compelling websites and softwares for multiple entities.
+            Whether it's a database design, backend development, frontend
+            development, developing current softwares or anything in between, I
+            have a knack for helping brands find their voice and tell their
+            story in a way that resonates with their audience.
+            <br />
+            <br />
+            Most recently, I served as a Junior Salesforce Engineer in a Startup
+            company where I was responsible for all aspects of supporting
+            business requirements and deal with all the CRM needs of the client,
+            as well as developing a devOps product and design their website user
+            interface. In this role, I have also led a team of interns to
+            achieve their optimal learning experience as well as developing
+            their skills asynchronously. Besides, I have managed CRM platforms
+            and worked closely with our sales and marketing teams to ensure our
+            content was aligned with the their business goals. <br />
+            <br />
+            Prior to that, I spent multiple positions as an intern developing my
+            skills as a software After all, I am committed to assisting you in
+            successfully navigating the ever-evolving software environment so
+            that you can produce lasting value for your business. With an
+            approach that is centred on the user and creates trust as I assist
+            you, we anticipate difficulties, and discover possibilities that
+            have been neglected.. I am the one you should get in touch with if
+            you want a website that exudes sophistication, professionalism, and
+            engineering,
+            <br />
+            <br />
+            What do I offer ?
+            <br /> 💎 Responsive web design development <br />
+            💎 Frontend/Backend Development <br />
+            💎 Websites user interface improvements <br />
+            💎 Web Application Development
+            <br /> 💎 Solving Complex Algorithms <br />
+            💎 Salesforce CRM Consultation
+            <br /> 💎 Database Design, Improving, Developing, and Maintaining{" "}
+            <br />
+            💎 System Architecture Design
+            <br /> 💎 HTML/CSS improvements
+            <br />
+            💎 Website Deployment
           </p>
         </Fade>
       </div>
