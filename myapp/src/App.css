@@ -431,7 +431,7 @@ button,
 }
 
 .featuresContainer > div {
-  width: 80%;
+  width: 40%;
 }
 .feature-title {
   color: #000;
@@ -625,5 +625,9 @@ textarea:focus {
 
   .feature-p {
     width: 100%;
+  }
+
+  .featuresContainer > div {
+    width: 80%;
   }
 }
