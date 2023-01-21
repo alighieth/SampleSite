@@ -660,4 +660,21 @@ textarea:focus {
   .featuresContainer > div {
     width: 80%;
   }
+
+  .contactForm {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .contact-container {
+    box-sizing: border-box;
+    padding: 5%;
+    width: 100vw;
+    background-image: url("https://e1.pxfuel.com/desktop-wallpaper/709/507/desktop-wallpaper-guitar-dark-music-instrument-best-best-dark-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }
