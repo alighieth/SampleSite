@@ -13,9 +13,10 @@ function App() {
     <>
       <div id="main-div">
         <Header />
+
+        <General />
+        <About />
       </div>
-      <General />
-      <About />
       <Extras />
       <Contact />
     </>
