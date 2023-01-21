@@ -8,16 +8,16 @@ import GrowYourBusiness from "./landerz/general";
 import HeaderLogo, { NavBar } from "./landerz/header";
 import Prototypes from "./landerz/prototypes";
 
+// iphone 11 414 * 896
 function App() {
   return (
     <>
       <div id="main-div">
         <Header />
-
         <General />
         <About />
+        <Extras />
       </div>
-      <Extras />
       <Contact />
     </>
     // landerz

@@ -563,7 +563,7 @@ textarea:focus {
     min-height: max-content;
     background-image: url("https://wallpaperaccess.com/full/3483001.jpg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100vh;
     background-attachment: fixed;
     color: white;
   }
