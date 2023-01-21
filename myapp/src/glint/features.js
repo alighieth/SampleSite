@@ -11,7 +11,7 @@ const About = () => {
       }}
     >
       <div className="about" id="about">
-        <Fade>
+        <Fade left>
           <div className="about-subhead">HELLO THERE</div>
           <div className="about-header">We Are AliGhieth's</div>
           <hr className="about-line" />
@@ -47,52 +47,53 @@ const Extras = () => {
           <div className="about-header extrasblack">
             We’ve got everything you need to launch and grow your business
           </div>
-          <hr className="about-line" />
-          <div className="featuresContainer">
-            <Fade bottum>
-              <FeaturesBox
-                image="brush.svg"
-                title="Brand Identity"
-                description="Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta sint."
-              />
-            </Fade>
-            <Fade bottum>
-              <FeaturesBox
-                image="ill.svg"
-                title="Illustration"
-                description="Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta sint."
-              />
-            </Fade>
-            <Fade bottum>
-              <FeaturesBox
-                image="marketing.svg"
-                title="Marketing"
-                description="Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta sint."
-              />
-            </Fade>
-            <Fade bottum>
-              <FeaturesBox
-                image="world.svg"
-                title="Web Design"
-                description="Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta sint."
-              />
-            </Fade>
-            <Fade bottum>
-              <FeaturesBox
-                image="cube.svg"
-                title="Packaging Design"
-                description="Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta sint."
-              />
-            </Fade>
-            <Fade bottum>
-              <FeaturesBox
-                image="dev.svg"
-                title="Web Development"
-                description="Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta sint."
-              />
-            </Fade>
-          </div>
         </Fade>
+        <hr className="about-line" />
+
+        <div className="featuresContainer">
+          <Fade right>
+            <FeaturesBox
+              image="brush.svg"
+              title="Brand Identity"
+              description="Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta sint."
+            />
+          </Fade>
+          <Fade right>
+            <FeaturesBox
+              image="ill.svg"
+              title="Illustration"
+              description="Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta sint."
+            />
+          </Fade>
+          <Fade right>
+            <FeaturesBox
+              image="marketing.svg"
+              title="Marketing"
+              description="Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta sint."
+            />
+          </Fade>
+          <Fade right>
+            <FeaturesBox
+              image="world.svg"
+              title="Web Design"
+              description="Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta sint."
+            />
+          </Fade>
+          <Fade right>
+            <FeaturesBox
+              image="cube.svg"
+              title="Packaging Design"
+              description="Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta sint."
+            />
+          </Fade>
+          <Fade right>
+            <FeaturesBox
+              image="dev.svg"
+              title="Web Development"
+              description="Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis. Sunt suscipit voluptas ipsa in tempora esse soluta sint."
+            />
+          </Fade>
+        </div>
       </div>
     </div>
   );

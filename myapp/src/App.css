@@ -6,12 +6,15 @@ button {
   padding: 0;
   border: 0;
 }
-body {
+#main-div {
+  width: 100vw;
+  height: max-content;
   background-image: url("plant.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   color: white;
+  background-color: #000;
 }
 
 .App {
@@ -556,8 +559,8 @@ textarea:focus {
 
 @media only screen and (max-width: 600px) {
 
-  main-div {
-    background-image: url("plant.jpeg");
+  #main-div {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2PKOinqs-MN05c0AMpI2ku_sg-5w5rjmNtg&usqp=CAU");
     background-repeat: no-repeat;
     background-size: 100vw;
     background-attachment: fixed;
