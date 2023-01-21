@@ -6,6 +6,7 @@ button {
   padding: 0;
   border: 0;
 }
+
 #main-div {
   width: 100vw;
   height: max-content;
@@ -58,7 +59,6 @@ a {
   justify-content: flex-end;
   width: 100vw;
   height: max-content;
-
   min-height: 100vh;
 }
 
@@ -349,16 +349,16 @@ li {
 }
 
 .home-content__buttons {
-  width: 100%;
+  width: 80%;
   box-sizing: border-box;
-  padding: 2%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   padding-top: 2rem;
   gap: 5%;
   margin-bottom: 10rem;
+  max-width: 1000px;
 }
 
 html {
@@ -471,6 +471,7 @@ button,
   padding: 5%;
   height: max-content;
   background-color: rgba(0, 0, 0, 0.3);
+  max-width: 1500px;
 }
 
 .form {
@@ -563,7 +564,7 @@ textarea:focus {
     min-height: max-content;
     background-image: url("https://wallpaperaccess.com/full/3483001.jpg");
     background-repeat: no-repeat;
-    background-size: 100vh;
+    background-size: 100vhx;
     background-attachment: fixed;
     color: white;
   }
@@ -575,6 +576,7 @@ textarea:focus {
   .header-glint {
     justify-content: center;
   }
+
   .advert {
     margin-top: 5rem;
     box-sizing: border-box;

@@ -43,21 +43,6 @@ const About = () => {
             have been neglected.. I am the one you should get in touch with if
             you want a website that exudes sophistication, professionalism, and
             engineering,
-            <br />
-            <br />
-            What do I offer ?
-            <br /> 💎 Responsive web design development <br />
-            💎 Frontend/Backend Development <br />
-            💎 Websites user interface improvements <br />
-            💎 Web Application Development
-            <br /> 💎 Solving Complex Algorithms <br />
-            💎 Salesforce CRM Consultation
-            <br /> 💎 Database Design, Improving, Developing, and Maintaining{" "}
-            <br />
-            💎 System Architecture Design
-            <br /> 💎 HTML/CSS improvements
-            <br />
-            💎 Website Deployment
           </p>
         </Fade>
       </div>

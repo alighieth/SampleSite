@@ -3,10 +3,6 @@ import Contact from "./glint/contact";
 import About, { Extras } from "./glint/features";
 import General from "./glint/general";
 import Header from "./glint/header";
-import Calculator from "./landerz/calculator";
-import GrowYourBusiness from "./landerz/general";
-import HeaderLogo, { NavBar } from "./landerz/header";
-import Prototypes from "./landerz/prototypes";
 
 // iphone 11 414 * 896
 function App() {
@@ -17,17 +13,9 @@ function App() {
         <General />
         <About />
         <Extras />
+        <Contact />
       </div>
-      <Contact />
     </>
-    // landerz
-    // <>
-    //   {/* <HeaderLogo />
-    //   <NavBar />
-    //   <GrowYourBusiness />
-    //   <Prototypes /> */}
-    //   {/* <Calculator /> */}
-    // </>
   );
 }
 

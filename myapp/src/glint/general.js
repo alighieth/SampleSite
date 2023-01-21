@@ -6,7 +6,7 @@ const General = () => {
         <div className="advert-info">
           <span>WELCOME TO ALIGHIETH'S</span>
           <p>
-            I am a creative junior developer who design influential brands and
+            I am a creative junior developer who designs influential brands and
             digital experiences.
           </p>
           <div className="home-content__buttons">

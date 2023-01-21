@@ -116,7 +116,10 @@ const SocialMedia = () => {
       >
         <img width="10%" src="linkedin.svg" alt="linkedin" />
       </a>
-      <a href="https://github.com/alighieth" className="socialMediaIcons">
+      <a
+        href="https://www.instagram.com/alighieth/"
+        className="socialMediaIcons"
+      >
         <img width="10%" src="instagram.svg" alt="instagram" />
       </a>
     </div>
