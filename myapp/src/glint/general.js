@@ -11,7 +11,7 @@ const General = () => {
           </p>
           <div className="home-content__buttons">
             <a href="#about">Start A Project</a>
-            <a href="#about">More About Us</a>
+            <a href="#contact">More About Us</a>
           </div>
         </div>
       </Fade>
