@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   return (
@@ -133,18 +134,58 @@ const ContactFormForm = () => {
     document.getElementById("mycontactform").style.height = right;
     console.log(right);
   }, []);
+
+  const submitContactInfo = (e) => {
+    let from_name = document.getElementById("nameInput").value;
+    let email = document.getElementById("emailInput").value;
+    let subject = document.getElementById("subjectInput").value;
+    let message = document.getElementById("messageInput").value;
+
+    var data = {
+      from_name: from_name,
+      email: email,
+      subject: subject,
+      message: message,
+    };
+
+    emailjs
+      .send("service_28z21xf", "template_mnnw3ag", data, "zcm001YeOLTHzPhMu")
+      .then(() => {
+        console.log("email sent success");
+      });
+  };
   return (
     <form
+      onSubmit={submitContactInfo}
       style={{
         width: "100%",
         display: "flex",
         flexDirection: "column",
       }}
     >
-      <input type="text" name="" required="" placeholder="Your Name" />
-      <input type="text" name="" required="" placeholder="Your Email" />
-      <input type="text" name="" required="" placeholder="Subject" />
+      <input
+        id="nameInput"
+        type="text"
+        name=""
+        required=""
+        placeholder="Your Name"
+      />
+      <input
+        id="emailInput"
+        type="text"
+        name=""
+        required=""
+        placeholder="Your Email"
+      />
+      <input
+        id="subjectInput"
+        type="text"
+        name=""
+        required=""
+        placeholder="Subject"
+      />
       <textarea
+        id="messageInput"
         name=""
         required=""
         cols="30"
@@ -161,7 +202,9 @@ const ContactFormForm = () => {
           justifyContent: "center",
         }}
       >
-        <button className="btn">submit</button>
+        <button className="btn" type="submit">
+          submit
+        </button>
       </div>
     </form>
   );
