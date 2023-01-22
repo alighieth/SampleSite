@@ -643,7 +643,8 @@ textarea:focus {
   }
 
   .advert-info > span {
-    font-size: 1rem;
+    font-size: .75rem;
+    color: #121212;
   }
 
   .advert-info > p {
