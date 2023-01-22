@@ -616,7 +616,7 @@ textarea:focus {
     min-height: max-content;
     background-image: url("https://images.unsplash.com/photo-1503435980610-a51f3ddfee50?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80");
     background-repeat: no-repeat;
-    background-size: 100vhx;
+    background-size: 100vh;
     background-attachment: fixed;
     color: white;
   }
