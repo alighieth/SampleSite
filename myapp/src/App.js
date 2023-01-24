@@ -33,6 +33,10 @@ function App() {
             bottom: 16,
             right: 16,
             "& .MuiFab-primary": { backgroundColor: "#39b54a", color: "white" },
+            "& .MuiFab-secondary": {
+              backgroundColor: "#121212",
+              color: "white",
+            },
           }}
           icon={<ArrowUpwardIcon />}
         ></SpeedDial>

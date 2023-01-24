@@ -15,7 +15,7 @@ const About = () => {
       <div className="about" id="about">
         <Fade left>
           <div className="about-subhead">HELLO THERE</div>
-          <div className="about-header">I am AliGhieth</div>
+          <div className="about-header">I am Ali Ghieth</div>
           <hr className="about-line" />
           <p>
             I'm a software engineer, with more than 2 years of experience

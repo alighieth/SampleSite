@@ -49,7 +49,7 @@ const ImageMasonry = () => {
             height: "100vh",
           }}
         >
-          <HorizontalNonLinearStepper step={image} />
+          <HorizontalNonLinearStepper step={image} modal={[open, setOpen]} />
         </div>
       </Modal>
 

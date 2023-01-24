@@ -7,6 +7,10 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
+import DeleteIcon from "@mui/icons-material/Delete";
+import IconButton from "@mui/material/IconButton";
+import Tooltip from "@mui/material/Tooltip";
+import CloseIcon from "@mui/icons-material/Close";
 
 const itemData = [
   {
@@ -84,10 +88,11 @@ const itemData = [
   },
 ];
 
-export default function TextMobileStepper({ step }) {
+export default function TextMobileStepper({ modal, step }) {
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(step);
   const maxSteps = itemData.length;
+  const [open, setOpen] = modal;
 
   const handleNext = () => {
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
@@ -109,6 +114,18 @@ export default function TextMobileStepper({ step }) {
         alignItems: "center",
       }}
     >
+      <Tooltip
+        title="Close"
+        style={{
+          alignSelf: "flex-end",
+          backgroundColor: "white",
+          marginBottom: "1rem",
+        }}
+      >
+        <IconButton onClick={() => setOpen(false)}>
+          <CloseIcon />
+        </IconButton>
+      </Tooltip>
       <Box
         sx={{
           height: "80vh",
