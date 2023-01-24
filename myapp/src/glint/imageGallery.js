@@ -144,6 +144,9 @@ export default function TextMobileStepper() {
         activeStep={activeStep}
         nextButton={
           <Button
+            style={{
+              color: "#39b54a",
+            }}
             size="small"
             onClick={handleNext}
             disabled={activeStep === maxSteps - 1}
@@ -157,7 +160,14 @@ export default function TextMobileStepper() {
           </Button>
         }
         backButton={
-          <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
+          <Button
+            style={{
+              color: "#39b54a",
+            }}
+            size="small"
+            onClick={handleBack}
+            disabled={activeStep === 0}
+          >
             {theme.direction === "rtl" ? (
               <KeyboardArrowRight />
             ) : (
