@@ -107,7 +107,6 @@ export default function TextMobileStepper() {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: "#121212",
       }}
     >
       <Box
@@ -120,13 +119,25 @@ export default function TextMobileStepper() {
         }}
       >
         <img
-          width="90%"
+          style={{
+            maxWidth: "100vw",
+          }}
+          height="100%"
           loading="lazy"
           src={itemData[activeStep].img}
           alt={itemData[activeStep].title}
         />
       </Box>
       <MobileStepper
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          width: "100%",
+          marginTop: "1rem",
+          maxWidth: "1000px",
+          backgroundColor: "#121212",
+          color: "white",
+        }}
         variant="text"
         steps={maxSteps}
         position="static"
