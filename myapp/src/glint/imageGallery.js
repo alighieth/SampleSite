@@ -2,14 +2,12 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import { useTheme } from "@mui/material/styles";
 import MobileStepper from "@mui/material/MobileStepper";
-import Paper from "@mui/material/Paper";
-import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
-import DeleteIcon from "@mui/icons-material/Delete";
 import IconButton from "@mui/material/IconButton";
 import Tooltip from "@mui/material/Tooltip";
+import CircularProgress from "@mui/material/CircularProgress";
 import CloseIcon from "@mui/icons-material/Close";
 
 const itemData = [
@@ -93,14 +91,28 @@ export default function TextMobileStepper({ modal, step }) {
   const [activeStep, setActiveStep] = React.useState(step);
   const maxSteps = itemData.length;
   const [open, setOpen] = modal;
+  const [isLoaded, setisLoaded] = React.useState(false);
 
   const handleNext = () => {
+    setisLoaded(false);
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
   };
 
   const handleBack = () => {
+    setisLoaded(false);
     setActiveStep((prevActiveStep) => prevActiveStep - 1);
   };
+
+  // const imageLoaded = () => {
+  //   const image = document.querySelector("#modalImage");
+  //   console.log("image " + image);
+  //   var isLoaded = image != null && image.complete && image.naturalHeight !== 0;
+  //   setisLoaded(isLoaded);
+  // };
+
+  // React.useEffect(() => {
+  //   imageLoaded();
+  // }, [activeStep]);
 
   return (
     <Box
@@ -122,7 +134,12 @@ export default function TextMobileStepper({ modal, step }) {
           marginBottom: "1rem",
         }}
       >
-        <IconButton onClick={() => setOpen(false)}>
+        <IconButton
+          onClick={() => {
+            setOpen(false);
+            setisLoaded(false);
+          }}
+        >
           <CloseIcon />
         </IconButton>
       </Tooltip>
@@ -135,7 +152,13 @@ export default function TextMobileStepper({ modal, step }) {
           alignItems: "center",
         }}
       >
+        {!isLoaded && <CircularProgress color="success" />}
         <img
+          onLoad={() => {
+            setisLoaded(true);
+          }}
+          id="modalImage"
+          key={itemData[activeStep].img}
           style={{
             maxWidth: "100vw",
           }}

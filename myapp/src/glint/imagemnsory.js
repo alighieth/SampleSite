@@ -4,8 +4,6 @@ import Paper from "@mui/material/Paper";
 import Masonry from "@mui/lab/Masonry";
 import { styled } from "@mui/material/styles";
 import { Modal } from "@mui/material";
-import Stepper from "@mui/material/Stepper";
-import Step from "@mui/material/Step";
 import HorizontalNonLinearStepper from "./imageGallery";
 
 const Label = styled(Paper)(({ theme }) => ({
