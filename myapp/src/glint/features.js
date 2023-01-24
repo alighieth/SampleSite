@@ -1,4 +1,6 @@
+import { useEffect, useState } from "react";
 import Fade from "react-reveal/Fade";
+import Tada from "react-reveal/Tada";
 
 const About = () => {
   return (
@@ -69,6 +71,27 @@ const Extras = () => {
         </Fade>
         <hr className="about-line" />
 
+        <div className="counter-container">
+          <CounterBox
+            max={60}
+            text="Projects Completed"
+            bordered={true}
+            duration={3}
+          />
+          <CounterBox
+            max={10}
+            text="programming languages"
+            bordered={true}
+            duration={2}
+          />
+          <CounterBox
+            max={2}
+            text="years of experience"
+            bordered={false}
+            duration={1}
+          />
+        </div>
+
         <div className="featuresContainer">
           <Fade right>
             <FeaturesBox
@@ -114,6 +137,42 @@ const Extras = () => {
           </Fade>
         </div>
       </div>
+    </div>
+  );
+};
+
+const CounterBox = ({ max, text, bordered, duration }) => {
+  const [count, setCount] = useState(0);
+
+  const counter = (end, duration) => {
+    let start = 0;
+    // first three numbers from props
+    // if zero, return
+    if (start === end) return;
+
+    // find duration per increment
+    let totalMilSecDur = parseInt(duration);
+    let incrementTime = (totalMilSecDur / end) * 1000;
+
+    // timer increments start counter
+    // then updates count
+    // ends if start reaches end
+    let timer = setInterval(() => {
+      start += 1;
+      setCount(String(start));
+      if (start === end) clearInterval(timer);
+    }, incrementTime);
+  };
+
+  useEffect(() => {
+    // dependency array
+    counter(max, duration);
+  }, []);
+
+  return (
+    <div className={`counter-div ${bordered ? "bordered-right" : ""}`}>
+      <h5>{count}</h5>
+      <h6>{text}</h6>
     </div>
   );
 };

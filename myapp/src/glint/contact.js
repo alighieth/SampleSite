@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import emailjs from "@emailjs/browser";
+// import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   return (
@@ -148,12 +148,12 @@ const ContactFormForm = () => {
       message: message,
     };
 
-    emailjs
-      .send("service_28z21xf", "template_mnnw3ag", data, "zcm001YeOLTHzPhMu")
-      .then(() => {
-        console.log("email sent success");
-        window.scrollTo(0, 0);
-      });
+    // emailjs
+    //   .send("service_28z21xf", "template_mnnw3ag", data, "zcm001YeOLTHzPhMu")
+    //   .then(() => {
+    //     console.log("email sent success");
+    //     window.scrollTo(0, 0);
+    //   });
   };
   return (
     <form
