@@ -49,7 +49,7 @@ const ImageMasonry = () => {
             height: "100vh",
           }}
         >
-          <HorizontalNonLinearStepper />
+          <HorizontalNonLinearStepper step={image} />
         </div>
       </Modal>
 
@@ -58,7 +58,7 @@ const ImageMasonry = () => {
           <div
             key={index}
             onClick={() => {
-              setImage(item);
+              setImage(index);
               handleOpen();
             }}
           >

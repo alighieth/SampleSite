@@ -84,9 +84,9 @@ const itemData = [
   },
 ];
 
-export default function TextMobileStepper() {
+export default function TextMobileStepper({ step }) {
   const theme = useTheme();
-  const [activeStep, setActiveStep] = React.useState(0);
+  const [activeStep, setActiveStep] = React.useState(step);
   const maxSteps = itemData.length;
 
   const handleNext = () => {
