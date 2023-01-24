@@ -3,6 +3,10 @@ import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Masonry from "@mui/lab/Masonry";
 import { styled } from "@mui/material/styles";
+import { Modal } from "@mui/material";
+import Stepper from "@mui/material/Stepper";
+import Step from "@mui/material/Step";
+import HorizontalNonLinearStepper from "./imageGallery";
 
 const Label = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -16,6 +20,11 @@ const Label = styled(Paper)(({ theme }) => ({
 
 const ImageMasonry = () => {
   const [width, setWidth] = useState(0);
+  const [image, setImage] = useState({});
+  const [open, setOpen] = React.useState(false);
+
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
 
   useEffect(() => {
     const windowWidth = window.innerWidth;
@@ -25,9 +34,34 @@ const ImageMasonry = () => {
 
   return (
     <Box sx={{ width: "100%", minHeight: 829 }}>
+      <Modal
+        aria-labelledby="transition-modal-title"
+        aria-describedby="transition-modal-description"
+        open={open}
+        onClose={handleClose}
+      >
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            width: "100vw",
+            height: "100vh",
+          }}
+        >
+          <HorizontalNonLinearStepper />
+        </div>
+      </Modal>
+
       <Masonry columns={width <= 760 ? 2 : 3} spacing={2}>
         {itemData.map((item, index) => (
-          <div key={index}>
+          <div
+            key={index}
+            onClick={() => {
+              setImage(item);
+              handleOpen();
+            }}
+          >
             <Label>{index + 1}</Label>
             <img
               src={`${item.img}?w=162&auto=format`}
