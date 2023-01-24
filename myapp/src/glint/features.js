@@ -147,6 +147,7 @@ const Extras = () => {
 
 const CounterBox = ({ max, text, bordered, duration }) => {
   const [count, setCount] = useState(0);
+  const [shown, setshown] = useState(false);
 
   const counter = (end, duration) => {
     let start = 0;
@@ -175,7 +176,8 @@ const CounterBox = ({ max, text, bordered, duration }) => {
 
   const onChange = (isVisible) => {
     console.log("is visible ", isVisible);
-    if (isVisible) {
+    if (isVisible && !shown) {
+      setshown(true);
       counter(max, duration);
     }
   };

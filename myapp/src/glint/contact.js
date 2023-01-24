@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-// import emailjs from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   return (
@@ -51,8 +51,9 @@ const ContactForm = () => {
           description={
             <>
               <p>
-                alighieth2709@gmail.com <br />
-                alighieth09@gmail.com
+                alighieth2709@gmail.com
+                <br />
+                thestratupcompany@gmail.com
                 <br />
               </p>
             </>
@@ -65,7 +66,6 @@ const ContactForm = () => {
               <p>
                 Phone: (+20) 1211399151 <br />
                 Mobile: (+63) 555 0100 <br />
-                Fax: (+63) 555 0101 <br />
               </p>
             </>
           }
@@ -135,7 +135,7 @@ const ContactFormForm = () => {
     console.log(right);
   }, []);
 
-  const submitContactInfo = (e) => {
+  const submitContactInfo = async (e) => {
     let from_name = document.getElementById("nameInput").value;
     let email = document.getElementById("emailInput").value;
     let subject = document.getElementById("subjectInput").value;
@@ -148,12 +148,12 @@ const ContactFormForm = () => {
       message: message,
     };
 
-    // emailjs
-    //   .send("service_28z21xf", "template_mnnw3ag", data, "zcm001YeOLTHzPhMu")
-    //   .then(() => {
-    //     console.log("email sent success");
-    //     window.scrollTo(0, 0);
-    //   });
+    await emailjs
+      .send("service_28z21xf", "template_mnnw3ag", data, "zcm001YeOLTHzPhMu")
+      .then(() => {
+        console.log("email sent success");
+        window.scrollTo(0, 0);
+      });
   };
   return (
     <form
