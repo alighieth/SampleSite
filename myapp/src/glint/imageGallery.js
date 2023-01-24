@@ -121,6 +121,7 @@ export default function TextMobileStepper() {
       >
         <img
           width="90%"
+          loading="lazy"
           src={itemData[activeStep].img}
           alt={itemData[activeStep].title}
         />
