@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useEffect, useState } from "react";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Masonry from "@mui/lab/Masonry";
@@ -14,10 +14,18 @@ const Label = styled(Paper)(({ theme }) => ({
   borderBottomRightRadius: 0,
 }));
 
-export default function ImageMasonry() {
+const ImageMasonry = () => {
+  const [width, setWidth] = useState(0);
+
+  useEffect(() => {
+    const windowWidth = window.innerWidth;
+    console.log(windowWidth);
+    setWidth(windowWidth);
+  }, []);
+
   return (
     <Box sx={{ width: "100%", minHeight: 829 }}>
-      <Masonry columns={3} spacing={2}>
+      <Masonry columns={width <= 760 ? 2 : 3} spacing={2}>
         {itemData.map((item, index) => (
           <div key={index}>
             <Label>{index + 1}</Label>
@@ -38,7 +46,7 @@ export default function ImageMasonry() {
       </Masonry>
     </Box>
   );
-}
+};
 
 const itemData = [
   {
@@ -111,3 +119,5 @@ const itemData = [
     title: "Mountain",
   },
 ];
+
+export default ImageMasonry;
