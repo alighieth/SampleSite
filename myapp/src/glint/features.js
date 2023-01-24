@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Fade from "react-reveal/Fade";
-import Tada from "react-reveal/Tada";
+import VisibilitySensor from "react-visibility-sensor";
 
 const About = () => {
   return (
@@ -53,6 +53,10 @@ const About = () => {
 };
 
 const Extras = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const onVisibilityChange = (isVisible) => {
+    console.log(isVisible + "vosi");
+  };
   return (
     <div
       style={{
@@ -164,16 +168,25 @@ const CounterBox = ({ max, text, bordered, duration }) => {
     }, incrementTime);
   };
 
-  useEffect(() => {
-    // dependency array
-    counter(max, duration);
-  }, []);
+  // useEffect(() => {
+  //   // dependency array
+  //   counter(max, duration);
+  // }, []);
+
+  const onChange = (isVisible) => {
+    console.log("is visible ", isVisible);
+    if (isVisible) {
+      counter(max, duration);
+    }
+  };
 
   return (
-    <div className={`counter-div ${bordered ? "bordered-right" : ""}`}>
-      <h5>{count}</h5>
-      <h6>{text}</h6>
-    </div>
+    <VisibilitySensor onChange={onChange}>
+      <div className={`counter-div ${bordered ? "bordered-right" : ""}`}>
+        <h5>{count}</h5>
+        <h6>{text}</h6>
+      </div>
+    </VisibilitySensor>
   );
 };
 
