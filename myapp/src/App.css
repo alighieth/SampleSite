@@ -715,6 +715,7 @@ textarea:focus {
   }
 
   .home-content__buttons {
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
