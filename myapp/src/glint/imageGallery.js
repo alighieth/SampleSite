@@ -103,6 +103,9 @@ export default function TextMobileStepper({ modal, step }) {
     setActiveStep((prevActiveStep) => prevActiveStep - 1);
   };
 
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
   // const imageLoaded = () => {
   //   const image = document.querySelector("#modalImage");
   //   console.log("image " + image);
@@ -117,13 +120,13 @@ export default function TextMobileStepper({ modal, step }) {
   return (
     <Box
       sx={{
-        maxWidth: 400,
         flexGrow: 1,
         p: 1,
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
+        width: "70vh",
       }}
     >
       <Tooltip
@@ -153,20 +156,38 @@ export default function TextMobileStepper({ modal, step }) {
         }}
       >
         {!isLoaded && <CircularProgress color="success" />}
-        <img
-          onLoad={() => {
-            setisLoaded(true);
-          }}
-          id="modalImage"
-          key={itemData[activeStep].img}
-          style={{
-            maxWidth: "100vw",
-          }}
-          height="100%"
-          loading="lazy"
-          src={itemData[activeStep].img}
-          alt={itemData[activeStep].title}
-        />
+        {window.innerWidth < 750 ? (
+          <img
+            className="mobileGallery"
+            onLoad={() => {
+              setisLoaded(true);
+            }}
+            id="modalImage"
+            key={itemData[activeStep].img}
+            style={{
+              maxWidth: "100vw",
+            }}
+            width="100%"
+            src={itemData[activeStep].img}
+            alt={itemData[activeStep].title}
+          />
+        ) : (
+          <img
+            className="mobileGallery"
+            onLoad={() => {
+              setisLoaded(true);
+            }}
+            id="modalImage"
+            key={itemData[activeStep].img}
+            style={{
+              maxWidth: "100vw",
+            }}
+            height="100%"
+            loading="lazy"
+            src={itemData[activeStep].img}
+            alt={itemData[activeStep].title}
+          />
+        )}
       </Box>
       <MobileStepper
         style={{

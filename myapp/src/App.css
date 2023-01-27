@@ -120,7 +120,7 @@ a {
   align-items: center;
   justify-content: space-between;
   font-family: "lora-regular", serif;
-  font-size: 1.7rem;
+  font-size: 2.7rem;
   font-style: normal;
   font-weight: normal;
   box-sizing: border-box;
@@ -160,7 +160,7 @@ a {
   font-family: "montserrat-medium", sans-serif;
   font-size: 1rem;
   /* color: rgba(255, 255, 255, 0.5); */
-  color: #121212;
+  color: black;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
   position: relative;
@@ -690,6 +690,7 @@ textarea:focus {
 
   .advert-info > span {
     font-size: 0.75rem;
+    color: #39b54a;
   }
 
   .advert-info > p {
